@@ -1,0 +1,645 @@
+body {
+    background-color: #f4f4f4;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.88rem;
+    background: #f4f4f4;
+    user-select: none;
+    overflow-x: hidden;
+
+}
+
+/* navigation bar style */
+body .navbar {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    width: 45px;
+    margin-left: 50px;
+}
+
+.title {
+    position: relative;
+    left: 10px;
+    margin-top: 14px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.navbar ul {
+    position: relative;
+    margin-left: 700px;
+    margin-top: 15px;
+    list-style-type: none;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.navbar li {
+    display: inline;
+    font-size: 15px;
+    margin: 14px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+#info-link {
+    color: black;
+}
+
+.navbar .buttons {
+    position: relative;
+    left: 40px;
+}
+
+.navbar #signin {
+    padding: 8px 25px 8px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+    transition: .3s ease-in-out
+}
+
+#signin:hover {
+    background-color: white;
+    color: black;
+}
+
+.navbar #signup {
+    padding: 8px 25px 8px;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    border: 1px solid black;
+    transition: .3s ease-in-out;
+}
+
+#signup:hover {
+    background-color: black;
+    color: white;
+}
+
+/* top block  */
+.box1 {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+}
+
+.box1 img {
+    max-width: 70%;
+    margin-left: 200px;
+    margin-top: 70px;
+}
+
+.info {
+    margin-left: 130px;
+    margin-top: 150px;
+    color: black;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', Arial;
+}
+
+.details {
+    margin-left: 130px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #0077b6;
+    font-family: 'Franklin Gothic Medium', Arial;
+}
+
+.buttons2 {
+    position: relative;
+    top: 30px;
+}
+
+.buttons2 #signin {
+    padding: 8px 25px 8px;
+    background-color: #f4f4f4;
+    color: black;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.buttons2 #signup {
+    margin-left: 130px;
+    padding: 8px 25px 8px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+/* second block */
+.box2 img {
+    max-width: 38%;
+    margin-left: 100px;
+}
+
+.box2 ul {
+    position: relative;
+    margin-left: 730px;
+    top: -400px;
+    width: 30%;
+}
+
+.box2 li {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', Arial;
+    color: gray;
+}
+
+.grid {
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+}
+
+.container a {
+    color: white;
+}
+
+.container img {
+    display: block;
+    width: 100%;
+}
+
+h3 {
+    font-size: 0.87rem;
+}
+
+h4 {
+    font-size: 0.8rem;
+}
+
+h5 {
+    font-size: 0.77rem;
+}
+
+
+/* sidebar */
+aside {
+    height: 100vh;
+}
+
+aside .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+
+aside .logo {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.search-wrapper {
+    position: relative;
+    left: 110px;
+}
+
+.search-wrapper i {
+    position: relative;
+    top: -27px;
+    left: 390px;
+}
+
+.search-input {
+    width: 399px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    border: 0px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 500px;
+}
+
+.profile img {
+    max-width: 70%;
+    max-height: 70%;
+}
+
+.profile h4 {
+    margin-left: 10px;
+}
+
+aside .logo img {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+aside .close {
+    display: none;
+}
+
+aside .sidebar {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top: 1rem;
+    border-radius: 20px;
+}
+
+aside h3 {
+    font-weight: 500;
+}
+
+aside .sidebar a {
+    display: flex;
+    color: #959595;
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+    border-radius: 20px;
+
+}
+
+aside .sidebar a i {
+    font-size: 1.0rem;
+    transition: all 300ms ease;
+}
+
+aside .sidebar a.active {
+    background: #caf0f8;
+    color: black;
+    margin-left: 0px;
+    padding-left: 20px;
+}
+
+
+aside.sidebar a.active i {
+    color: red;
+    margin-left: calc(1rem -3px);
+}
+
+aside .sidebar a:hover {
+    color: #6d6875;
+}
+
+aside .sidebar a:hover i {
+    margin-left: 1rem;
+}
+
+aside .sidebar .message {
+    background-color: #e76f51;
+    color: white;
+    border-radius: 20px;
+    font-size: 10px;
+    padding: 2px 10px;
+}
+
+/* ----MAIN---- */
+main {
+    background-color: white;
+    display: block;
+    margin-top: 100px;
+    border-radius: 25px;
+}
+
+main h1 {
+    margin-left: 20px;
+}
+
+main .statics {
+    margin-left: 20px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+main h3 span {
+    font-size: 10px;
+    color: #435443;
+}
+
+.add a {
+    background-color: #e76f51;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 20px;
+    border: none;
+    position: relative;
+    top: -40px;
+    left: 660px;
+    transition: 0.3s ease-in;
+}
+
+.add a:hover {
+    background-color: #b5523a;
+}
+
+main .grid {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin-left: 30px;
+    width: auto;
+    gap: 25px;
+}
+
+.grid .box1 {
+    background-color: #fec89a;
+    border-radius: 30px;
+    padding: 0px 65px;
+}
+
+.grid .box2 {
+    background-color: #f1c0e8;
+    border-radius: 30px;
+    padding: 0px 65px;
+}
+
+.grid .box3 {
+    background-color: #dbf4ad;
+    border-radius: 30px;
+    padding: 0px 65px;
+}
+
+#date {
+    position: relative;
+    font-weight: lighter;
+    left: -45px;
+    top: -10px;
+    color: gray;
+}
+
+.project-title h5 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.project-title h6 {
+    text-align: center;
+    color: gray;
+}
+
+.project-details span {
+    font-size: 10px;
+    background-color: white;
+    color: #b5523a;
+    border-radius: 5px;
+    padding: 2px 3px;
+    position: relative;
+    top: 3px;
+    left: 85px;
+}
+.functions{
+    position : relative;
+    top :-15px;
+    left : -40px;
+}
+.functions a{
+    color : gray;
+    margin-right : 5px; 
+}
+
+/* notification section */
+.notifications {
+    background-color: white;
+    display: block;
+    margin-top: 100px;
+    border-radius: 25px;
+    padding: 0px 10px;
+    max-height: 50%;
+}
+
+.notifications h1 {
+    border-bottom: 1px solid black;
+}
+
+box h6 {
+    color: gray;
+    border-bottom: 1px solid gray;
+}
+
+/* add new project section */
+.new-project {
+    background-color: white;
+    display: block;
+    margin-top: 95px;
+    border-radius: 25px;
+}
+
+.new-project h1 {
+    margin-left: 20px;
+    width: 50%;
+    border-bottom: 1px solid black;
+}
+
+form {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+form label {
+    font-size: 15px;
+}
+
+form input {
+    border: none;
+    background-color: #dbf4ad;
+    width: 50%;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    border: none;
+    background-color: #dbf4ad;
+    width: 50%;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+#submit {
+    font-weight: bold;
+    color: white;
+    background-color: #afc586;
+    transition: 0.3s ease-in-out;
+}
+
+#submit:hover {
+    background-color: #829e4c;
+}
+
+/* footer style */
+footer {
+    border-top: 1px solid black;
+}
+
+.copyright {
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', Arial;
+    text-align: center;
+    color: gray;
+}
+
+footer ul {
+    font-family: 'Franklin Gothic Medium', Arial;
+    list-style: none;
+    text-align: center;
+    color: gray;
+
+}
+
+footer li {
+    margin-bottom: 5px;
+}
+
+/* Media Query for Phones */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    body .navbar {
+        padding: 5px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        margin: 10px 0 0 0;
+        padding: 0;
+    }
+
+    .navbar li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+
+    .title {
+        margin-top: 0;
+        font-size: 18px;
+    }
+
+    .navbar .buttons {
+        left: 0;
+        margin-top: 10px;
+    }
+
+    .navbar #signin, .navbar #signup {
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+
+    .box1 img {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .info, .details {
+        margin-left: 10px;
+        font-size: 30px;
+    }
+
+    .buttons2 {
+        top: 10px;
+    }
+
+    .buttons2 #signup {
+        margin-left: 10px;
+    }
+
+    .box2 img {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .box2 ul {
+        margin-left: 10px;
+        top: 0;
+        width: 100%;
+    }
+
+    .grid {
+        display: block;
+    }
+
+    aside {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+
+    aside .logo {
+        left: 10px;
+        margin-top: 10px;
+    }
+
+    .search-wrapper {
+        left: 10px;
+    }
+
+    .search-input {
+        width: 80%;
+    }
+
+    .profile {
+        left: 10px;
+    }
+
+    main {
+        margin-top: 50px;
+    }
+
+    main .add a {
+        left: 10px;
+    }
+
+    main .grid {
+        margin-left: 10px;
+        gap: 15px;
+    }
+
+    .functions {
+        left: 0;
+    }
+
+    .functions a {
+        margin-right: 3px;
+    }
+
+    .notifications, .new-project {
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> Staff. </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/6d6a0cbceb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid">
+            <aside>
+                <div class="top">
+                    <div class="logo">
+                        <img src="logo.png">
+                        <div class="title">Staff.</div>
+                        <div class="search-wrapper">
+                            <input class="search-input" type="text" placeholder="Search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="profile">
+                            <img src="photo6.png">
+                            <h4>administrator</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <a href="#">
+                        <i class="fas fa-th"></i>
+                        <h3>Dashboard</h3>
+                    </a>
+                    <a href="#" class="active">
+                        <i class="fa-solid fa-paperclip"></i>
+                        <h3>Projects</h3>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-calendar"></i>
+                        <h3>Calendar</h3>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-message"></i>
+                        <h3>Messages</h3>
+                        <span class="message">30</span>
+                    </a>
+                </div>
+            </aside>
+            <div class="new-project">
+                <h1>Add new project</h1>
+                <form action="#">
+                    <label for="fname">Date</label>
+                    <input type="date" id="dateinput" name="firstname">
+
+                    <label for="lname">Project Name</label>
+                    <input type="text" id="name" name="lastname" placeholder="Project name...">
+
+                    <label for="subject">Informations</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit" id="submit">
+
+                </form>
+            </div>
+            <div class="notifications">
+                <h1> notifications</h1>
+                <box>
+                    <h6>Lorem ipsum dolor sit accusantium perferendis ad?</h6>
+                    <h6>Lorem ipsum dolor sit accusantium perferendis ad?</h6>
+                    <h6>Lorem ipsum dolor sit accusantium perferendis ad?</h6>
+                </box>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
