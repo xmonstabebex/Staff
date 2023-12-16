@@ -1,4 +1,4 @@
-#staff
+#Staff
 
 This project was created for my web development class,it has a professional template and consisting of 5 pages: Home, Sign In, Sign Up, Dashboard, and Add New Project. As my inaugural attempt at web development using HTML, CSS, and JavaScript, the site undoubtedly lacks certain elements.
 
